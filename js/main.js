@@ -1,10 +1,20 @@
 "use strict";
 $(function () {
     // scroll
-    $(".menu-item-link").on("click", function () { // or hero-button click
+    $(".menu-item-link, .hero-button").on("click", function () {
         let get_id = $(this).attr("data-item");
         let target = $("#" + get_id).offset().top;
-        $(" html, body").animate({scrollTop: target}, 800);
+        let headerHeight = $(".header").outerHeight();
+        $(" html, body").animate({scrollTop: target - headerHeight}, 800);
+    });
+
+    // sticky header
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 50) { // 50px можно поменять
+            $(".header").addClass("fixed");
+        } else {
+            $(".header").removeClass("fixed");
+        }
     });
     
     // carousels init
