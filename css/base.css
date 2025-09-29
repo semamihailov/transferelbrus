@@ -3,187 +3,22 @@
 /*--------------------*/
 
 @font-face {
-    font-family: "Onest";
-    src: url("../fonts/Onest-ExtraLight.ttf") format("truetype");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Onest";
-    src: url("../fonts/Onest-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Onest";
-    src: url("../fonts/Onest-Regular.ttf") format("truetype");
+    font-family: "Involve";
+    src: url("../fonts/Involve-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: "Onest";
-    src: url("../fonts/Onest-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Onest";
-    src: url("../fonts/Onest-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Onest";
-    src: url("../fonts/Onest-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "SF Pro Display";
-    src: url("../fonts/SF-Pro-Display-Regular.otf") format("opentype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "SF Pro Display";
-    src: url("../fonts/SF-Pro-Display-Medium.otf") format("opentype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "SF Pro Display";
-    src: url("../fonts/SF-Pro-Display-Semibold.otf") format("opentype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "DIN Pro";
-    src: url("../fonts/dinpro_bold.otf") format("opentype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "AGAvalancheC";
-    src: url("../fonts/agavalanchec_bold.otf") format("opentype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeue-Medium.otf") format("opentype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/HelveticaNeue-Bold.otf") format("opentype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Mont";
-    src: url("../fonts/Mont-HeavyDEMO.otf") format("opentype");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter-Italic.ttf") format("truetype");
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+    font-family: "Involve";
+    src: url("../fonts/Involve-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 :root {
-    --bg-black: #121212;
-    --bg-dark-blue: #1e1f25;
-    --bg-dark-gray: #2a2d34;
-    --bg-dark-blue-2: #1e1f25;
-    --bg-white: #f5f5f7;
-    --accent-red: #ee0005;
-    --accent-green: #a7ba5a;
-    --accent-orange: #f57c00;
-    --accent-pink: #ff6b6b;
-    --text-white: #fff;
-    --text-gray: #717a8d;
-    --text-dark: #1d1d1f;
-    --text-gray-2: #aeafb9;
-    --fill-dark-blue: #303240;
-    --fill-dark-blue-2: #1e1f25;
-    --fill-violet: #808ad8;
-    --fill-gray: #76798b;
-    --fill-dark-blue: #3b3d52;
-    --fill-violet-hover: #6770ba;
-    --fill-light: #c9cbda;
-    --color-neutral-darkest: #000;
-    --color-white: #fff;
-    --color-neutral-lighter: #ccc;
-
-
-    --font-family: "Onest", sans-serif;
-    --second-family: "Roboto", sans-serif;
-    --third-family: "SF Pro Display", sans-serif;
-    --font3: "DIN Pro", sans-serif;
-    --font4: "AGAvalancheC", sans-serif;
-    --font5: "Helvetica Neue", sans-serif;
-    --font6: "Mont", sans-serif;
-    --font7: "Inter", sans-serif;
+    --font-family: "Involve", sans-serif;
 }
 
 
