@@ -36,6 +36,9 @@ $(function () {
                 center: true,
             },
             1024: {
+                items: 2,
+            },
+            1280: {
                 items: 3,
             }
         }
