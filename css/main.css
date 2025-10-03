@@ -1169,8 +1169,18 @@ html {
     height: 50px;
     background: #00E510;
 }
-.page-social svg{
-    width: 63%;
+.page-social svg {
+    animation: vibrate-pause 2s infinite;
+    transform-origin: center;
+}
+@keyframes vibrate-pause {
+    0%   { transform: translateX(0); }
+    5%   { transform: translateX(-2px); }
+    10%  { transform: translateX(2px); }
+    15%  { transform: translateX(-2px); }
+    20%  { transform: translateX(2px); }
+    25%  { transform: translateX(0); }
+    100% { transform: translateX(0); }
 }
 .page-social svg path{
     fill: #fff;

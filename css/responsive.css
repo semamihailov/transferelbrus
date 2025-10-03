@@ -784,6 +784,9 @@
     .page-social{
         display: flex;
     }
+    .content-section .container h3:after{
+        content: url("../images/content-section-blur-mobile.png");
+    }
 }
 
 
