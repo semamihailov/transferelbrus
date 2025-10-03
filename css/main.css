@@ -1013,8 +1013,15 @@ html {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-    height: 740px;
+    max-height: 740px;
     margin: 100px auto 0;
+    position: relative;
+    z-index: 2;
+}
+.gallery:after{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .gallery img {
     width: 100%;
@@ -1033,10 +1040,31 @@ html {
 }
 .sights-page-contacts-items{
     margin-top: 120px;
+    position: relative;
+    z-index: 2;
 }
 .content-section{
+    position: relative;
     padding-bottom: 50px;
     padding-top: 120px;
+}
+.content-section-img{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 100px;
+    width: 100%;
+}
+.content-section .container{
+    position: relative;
+    z-index: 2;
+}
+.content-section-blur{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
 }
 .content-section .container h2{
     font-family: var(--font-family);
@@ -1050,7 +1078,6 @@ html {
 }
 .content-section .container h3{
     position: relative;
-    z-index: 2;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 25px;
@@ -1059,6 +1086,10 @@ html {
     text-align: center;
     color: #01336d;
     margin-bottom: 65px;
+}
+.content-section .container h3 span{
+    position: relative;
+    z-index: 2;
 }
 .content-section .container h3:after{
     position: absolute;
@@ -1076,12 +1107,15 @@ html {
     line-height: 130%;
     text-align: center;
     color: #01336d;
-    margin-bottom: 65px;
+    margin: 0 100px 65px;
 }
-.content-section .container p:first-child{
+.content-section .container p:nth-child(2){
     margin-bottom: 135px;
+    max-width: 1200px;
 }
-
+.content-section .container p:nth-child(4){
+    max-width: 1380px;
+}
 .content-section .container ul{
     max-width: 1060px;
     margin: 0 auto 65px;
@@ -1101,16 +1135,17 @@ html {
     margin-bottom: 20px;
 }
 .content-section .container ul li:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
     width: 50px;
     height: 50px;
-    content: url("../images/icons/ul-checkmark-1.png");
-    position: absolute;
-    left: 0px;
-    top: 50%;
     transform: translateY(-50%);
+    background: url("../images/icons/ul-checkmark-1.png") no-repeat center/contain;
 }
 .content-section .container ul:last-of-type li:before{
-    content: url("../images/icons/ul-checkmark-2.png");
+    background: url("../images/icons/ul-checkmark-2.png") no-repeat center/contain;
 }
 
 

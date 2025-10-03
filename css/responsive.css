@@ -286,6 +286,41 @@
     .contacts-section{
         padding-bottom: 50px;
     }
+    .gallery{
+        gap: 10px;
+        margin-top: 64px;
+    }
+    .content-section .container h2{
+        font-size: 42px;
+    }
+    .content-section .container p{
+        font-size: 18px;
+
+    }
+    .content-section .container ul li{
+        font-size: 18px;
+    }
+    .content-section .container ul li:before{
+        width: 30px;
+        height: 30px;
+    }
+    .content-section .container ul li{
+        font-size: 18px;
+        padding-left: 45px;
+    }
+    .content-section .container h3{
+        font-size: 23px;
+    }
+    .content-section .container ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .content-section .container ul {
+        max-width: 760px;;
+    }
+    .sights-page-contacts-items{
+        margin-top: 64px;
+    }
+
 }
 @media screen and (max-width: 1023px){
     .container{
