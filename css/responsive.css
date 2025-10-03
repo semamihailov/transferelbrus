@@ -320,6 +320,70 @@
     .sights-page-contacts-items{
         margin-top: 64px;
     }
+    .about-section {
+        background-size: cover;
+        background-image: url(../images/about-bg-3.png);
+        padding-bottom: 50px;
+    }
+    .about-items{
+        align-items: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .about-items .about-item{
+        position: relative;
+        left: unset;
+        top: unset;
+        right: unset;
+        bottom: unset;
+        max-width: 598px;
+
+        text-align: center;
+        padding: 20px 50px;
+        background: #C9E2FF;
+    }
+    .about-items .about-item:nth-child(even){
+        background: #FFEAC9;
+    }
+    .about-items .about-item:before{
+        display: none;
+    }
+    .about-items .about-item:after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: unset;
+        transform: unset;
+        background-size: cover;
+    }
+    .about-item:nth-child(1)::after {
+        background-image: url(../images/icons/go-icon.svg);
+        bottom: -48px;
+        left: -144px;
+    }
+    .about-item:nth-child(2)::after {
+        background-image: url(../images/icons/car-icon.svg);
+        right: -155px;
+        bottom: -48px;
+    }
+    .about-item:nth-child(3)::after {
+        background-image: url(../images/icons/car-map-icon.svg);
+        left: -144px;
+        bottom: -71px;
+    }
+    .about-item:nth-child(4)::after {
+        background-image: url(../images/icons/map-icon.svg);
+        right: -155px;
+        bottom: -48px;
+    }
+    .about-item:nth-child(5)::after {
+        background-image: url(../images/icons/bus-icon.svg);
+        left: -144px;
+        bottom: -71px;
+    }
 
 }
 @media screen and (max-width: 1023px){
