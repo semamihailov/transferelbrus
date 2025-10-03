@@ -35,6 +35,9 @@ $(function () {
                 margin: 10,
                 center: true,
             },
+            768: {
+                items: 1,
+            },
             1024: {
                 items: 2,
             },

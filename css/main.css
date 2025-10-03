@@ -859,6 +859,7 @@ body{
     position: absolute;
     top: -25px;
     left: 45px;
+    z-index: -1;
 }
 .section-header-text{
     font-family: var(--font-family);
@@ -1028,7 +1029,11 @@ html {
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+    transition: all .3s ease;
 }
+/*.gallery img:hover{*/
+/*    transform: scale(1.1);*/
+/*}*/
 .gallery img:first-child {
     grid-row: span 2;
     aspect-ratio: 1 / 1;
@@ -1107,7 +1112,7 @@ html {
     line-height: 130%;
     text-align: center;
     color: #01336d;
-    margin: 0 100px 65px;
+    margin: 0 180px 65px;
 }
 .content-section .container p:nth-child(2){
     margin-bottom: 135px;
@@ -1149,9 +1154,27 @@ html {
 }
 
 
+.page-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-
-
+    border-radius: 50%;
+    border: 1px solid #00E510;
+    position: fixed;
+    z-index: 999;
+    bottom: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    background: #00E510;
+}
+.page-social svg{
+    width: 63%;
+}
+.page-social svg path{
+    fill: #fff;
+}
 
 
 
